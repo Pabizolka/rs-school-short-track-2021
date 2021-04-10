@@ -11,7 +11,7 @@
  */
 function sortByHeight(array) {
   const res = array;
-  let arr;
+  const arr = [];
   res.forEach((element) => {
     if (element !== -1) {
       arr.push(element);
