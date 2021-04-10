@@ -11,16 +11,32 @@
  *
  */
 class Stack {
-  push(/* element */) {
-    throw new Error('Not implemented');
+  push(element) {
+    let i = 0;
+    while (i in this) {
+      i++;
+    }
+    this[i] = element;
   }
 
   pop() {
-    throw new Error('Not implemented');
+    let res = NaN;
+    let i = 0;
+    while (i in this) {
+      i++;
+    }
+
+    res = this[i - 1];
+    delete this[i - 1];
+    return res;
   }
 
   peek() {
-    throw new Error('Not implemented');
+    let i = 0;
+    while (i in this) {
+      i++;
+    }
+    return this[i - 1];
   }
 }
 
