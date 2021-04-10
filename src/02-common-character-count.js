@@ -14,7 +14,7 @@ function getCommonCharacterCount(s1, s2) {
   let str = s2;
   let res = 0;
   arr.forEach((elem) => {
-    if (s2.includes(elem)) {
+    if (str.includes(elem)) {
       res++;
       str = str.replace(elem, '');
     }
